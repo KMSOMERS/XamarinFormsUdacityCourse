@@ -4,16 +4,20 @@
              xmlns:local="clr-namespace:UdemyTutorialApps"
              x:Class="UdemyTutorialApps.MainPage">
 
-    <StackLayout>
-        <Button Text="Next" Clicked="Button_OnClicked"/>
+    <StackLayout Margin="8, 0, 8, 0">
+        <Button Text="Next" Clicked="Button_OnClicked" BackgroundColor="Transparent" TextColor="DeepSkyBlue"/>
         <Label Text="{Binding	
 					Source={x:Reference	Slider},
 					Path=Value,
-					StringFormat='Font Size: {0:F1}'}"/>
-        <Slider x:Name="Slider" Maximum="64" Minimum="16" />
-        <Label x:Name="QuoteLabel" FontSize="{Binding	
+					StringFormat='Font Size: {0:F1}'}"
+               FontSize="Large"
+               TextColor="Black"/>
+        <Slider x:Name="Slider" Maximum="64" Minimum="16" ThumbColor="White" MaximumTrackColor="DeepSkyBlue" MinimumTrackColor="Gray"/>
+        <Label x:Name="QuoteLabel"
+               FontSize="{Binding	
 					Source={x:Reference	Slider},
-					Path=Value}"/>
+					Path=Value}"
+               TextColor="Black"/>
     </StackLayout>
 
 </ContentPage>
