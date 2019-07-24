@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UdemyTutorialApps.Section3.StackLayout.ExerciseTwo">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0"/>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <Label Text="Username" FontSize="18" TextColor="Black" Margin="8"/>
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/"/>
+        <StackLayout Orientation="Horizontal" Spacing="8">  
+            <Button Text="Like" TextColor="LightSkyBlue" BackgroundColor="Transparent"/>
+            <Button Text="Comment" TextColor="LightSkyBlue" BackgroundColor="Transparent"/>
+            <Button Text="Share" TextColor="LightSkyBlue" BackgroundColor="Transparent"/>
+        </StackLayout>
+        <BoxView Color="#f0f0f0" HeightRequest="1" Margin="8, 0, 0, 8"/>
+        <Label Text="X likes"  FontSize="18" TextColor="Black"  Margin="8, 0, 0, 8"/>
+        <Label Text="Description Text" FontSize="18" Margin="8, 0, 0, 8"/>
+    </StackLayout>
+</ContentPage>

@@ -4,16 +4,4 @@
              xmlns:local="clr-namespace:UdemyTutorialApps"
              x:Class="UdemyTutorialApps.MainPage">
 
-    <StackLayout>
-        <Button Text="Next" Clicked="Button_OnClicked"/>
-        <Label Text="{Binding	
-					Source={x:Reference	Slider},
-					Path=Value,
-					StringFormat='Font Size: {0:F1}'}"/>
-        <Slider x:Name="Slider" Maximum="64" Minimum="16" />
-        <Label x:Name="QuoteLabel" FontSize="{Binding	
-					Source={x:Reference	Slider},
-					Path=Value}"/>
-    </StackLayout>
-
 </ContentPage>
