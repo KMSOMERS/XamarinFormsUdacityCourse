@@ -1,4 +1,5 @@
 ﻿using System;
+using UdemyTutorialApps.Section3.Grid;
 using UdemyTutorialApps.Section3.StackLayout;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace UdemyTutorialApps
         {
             InitializeComponent();
 
-            MainPage = new ExerciseTwo();
+            MainPage = new GridExerciseTwo();
         }
 
         protected override void OnStart()
